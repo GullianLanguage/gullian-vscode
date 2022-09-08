@@ -19,7 +19,7 @@
     }],
     "grammars": [{
       "language": "gullian",
-      "scopeName": "",
+      "scopeName": "source.gullian",
       "path": "./syntaxes/gullian.tmLanguage.json"
     }]
   }
