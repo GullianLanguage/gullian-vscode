@@ -3,6 +3,7 @@
   "displayName": "gullian-vscode",
   "description": "Language support for the programming language Gullian",
   "version": "0.0.1",
+  "repository": "github:https://github.com/GullianLanguage/gullian-vscode",
   "engines": {
     "vscode": "^1.71.0"
   },
