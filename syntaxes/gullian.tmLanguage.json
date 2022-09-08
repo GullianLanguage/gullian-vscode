@@ -1,0 +1,69 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Gullian",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"include": "#types"
+		}
+	],
+	"repository": {
+		"types": {
+			"patterns": [{
+					"name": "entity.name.type",
+					"match": "\\b(int|float|bool|char|str|ptr)\\b"
+				}
+			]
+		},
+		"names": {
+			"patterns": [
+				{
+					"name": "variable.name.gullian",
+					"match": "\\b([a-zA-Z][a-zA-Z0-9]*\\b"
+				}
+			]
+		},
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.gullian",
+					"match": "\\b(extern|import|struct|enum|union|fun|let|if|else|while|for|return)\\b"
+				}
+			]
+		},
+		"strings": {
+			"patterns": [
+				{
+					"name": "constant.character.escape.gullian",
+					"match": "\\\\."
+				},
+				{
+					"name": "string.quoted.double.gullian",
+					"begin": "\"",
+					"end": "\""
+				},
+				{
+					"name": "string.quoted.single.gullian",
+					"begin": "'",
+					"end": "'"
+				}
+			]
+		},
+		"numbers": {
+			"patterns": [{
+					"name": "constant.numeric.dec.gullian",
+					"match": "\\b[0-9][0-9_]*\\b"
+				}
+			]
+		}
+	},
+	"scopeName": "source.gullian"
+}

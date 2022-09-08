@@ -1,0 +1,25 @@
+{
+  "name": "gullian-vscode",
+  "displayName": "gullian-vscode",
+  "description": "Language support for the programming language Gullian",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.71.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "gullian",
+      "aliases": ["Gullian", "gullian"],
+      "extensions": [".gullian",".gull"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "gullian",
+      "scopeName": "",
+      "path": "./syntaxes/gullian.tmLanguage.json"
+    }]
+  }
+}
