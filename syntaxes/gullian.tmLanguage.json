@@ -48,12 +48,24 @@
 				{
 					"name": "string.quoted.double.gullian",
 					"begin": "\"",
-					"end": "\""
+					"end": "\"",
+					"patterns": [
+						{
+							"name": "constant.character.escape.gullian",
+							"match": "\\\\."
+						}
+					]
 				},
 				{
 					"name": "string.quoted.single.gullian",
 					"begin": "'",
-					"end": "'"
+					"end": "'",
+					"patterns": [
+						{
+							"name": "constant.character.escape.gullian",
+							"match": "\\\\."
+						}
+					]
 				}
 			]
 		},
