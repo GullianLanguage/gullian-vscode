@@ -6,6 +6,9 @@
 			"include": "#keywords"
 		},
 		{
+			"include": "#comment"
+		},
+		{
 			"include": "#strings"
 		},
 		{
@@ -19,7 +22,7 @@
 		"types": {
 			"patterns": [{
 					"name": "entity.name.type",
-					"match": "\\b(int|float|bool|char|str|ptr)\\b"
+					"match": "\\b(int|float|bool|char|str|ptr|array)\\b"
 				}
 			]
 		},
@@ -36,6 +39,14 @@
 				{
 					"name": "keyword.control.gullian",
 					"match": "\\b(extern|import|struct|enum|union|fun|let|if|else|while|for|return)\\b"
+				}
+			]
+		},
+		"comment": {
+			"patterns": [
+				{
+					"name": "comment.line.gullian",
+					"match": "(#).*\\n?"
 				}
 			]
 		},
