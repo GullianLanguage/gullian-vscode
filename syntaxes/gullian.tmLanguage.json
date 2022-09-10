@@ -38,7 +38,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.gullian",
-					"match": "\\b(extern|import|struct|enum|union|fun|let|if|else|while|for|return)\\b"
+					"match": "\\b(extern|import|struct|enum|union|fun|let|if|elif|else|while|for|return)\\b"
 				},
 				{
 					"name": "keyword.operator.gullian",
